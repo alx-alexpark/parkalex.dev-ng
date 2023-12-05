@@ -7,10 +7,13 @@ draft: false
 tags:
   - homelab
   - sysadmin
+  - linux
 description: I recently bought a used server off of eBay for a homelab. Here I will be documenting the setup process from start to finish.
 ---
 
 ![A picture of the rack server in my room](@assets/homelab/server-front.jpg)
+
+**Update 2023-12-05: A lot of the information on this page is now outdated, a new blog post about how my homelab has evolved will be out soon!**
 
 # Introduction
 
