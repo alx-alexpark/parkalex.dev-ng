@@ -1,5 +1,5 @@
 ---
-pubDatetime: 2023-12-09T21:15Z
+pubDatetime: 2023-12-09T21:15:00Z
 title: Why I Went Back to Android
 postSlug: homelab
 featured: false
