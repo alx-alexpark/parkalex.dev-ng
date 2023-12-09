@@ -1,7 +1,7 @@
 ---
 pubDatetime: 2023-12-09T21:15:00Z
 title: Why I Went Back to Android
-postSlug: homelab
+postSlug: why-i-went-back-to-android
 featured: false
 draft: false
 tags:
