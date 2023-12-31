@@ -23,13 +23,13 @@ I evaluate browsers in 3 basic categories: privacy, security, and utility. Firef
 
 ### Security
 
-[To put it simply, Firefox is not as secure as Chromium](https://madaidans-insecurities.github.io/firefox-chromium.html). Firefox was weaker sandboxing and lacks exploit mitigations. The developers of GrapheneOS even chose Chromium to be their default browser due to [having much stronger exploit protection and sandboxing than other options.](https://grapheneos.org/usage#web-browsing)
+[To put it simply, Firefox is not as secure as Chromium](https://madaidans-insecurities.github.io/firefox-chromium.html). Firefox has weaker sandboxing and lacks many exploit mitigations. The developers of GrapheneOS even chose to base their browser, Vanadium, off of Chromium due to it [having much stronger exploit protection and sandboxing than other options.](https://grapheneos.org/usage#web-browsing)
 
 ### Privacy
 
 In most cases, Firefox has better privacy by default. Firefox is backed by an organization that fights for privacy and freedom on the internet, in stark contrast to Chromium being backed by Google, a company known for numerous privacy violations.
 
-However, a massive caveat in the above statement is that Chromium is open source. Although proprietary Chromium based browsers such as Chrome may be spyware, the open source browser engine itself is perfectly fine.
+However, a massive caveat in the above statement is that Chromium is open source. Although proprietary Chromium based browsers such as Chrome may be spyware, the open source browser is much better (see more on this later).
 
 ## Narrowing down on our choices
 
@@ -44,14 +44,14 @@ Let's list the common Chromium based browsers and eliminate them one by one:
 
 My personal favorite Chromium based browser is [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium). It retains the security advantage of Chromium based browsers and strips the Google (or other companies’) spyware.
 
-**Other nice Chromium based browsers:**
+**Other nice Chromium-based browsers:**
 
 - [Arc](https://arc.net/) — Despite being proprietary, I think it's still a great browser, and the people running it have made it clear they respect your privacy.
 - [Brave](https://brave.com/) — Similar to ungoogled-chromium, with additional privacy improvements. If you choose Brave, I would disable the sketchy crypto things. **Disclaimer: I do not support the actions of Brave’s CEO**
 
 ## Browser extensions
 
-If you are using ungoogled-chromium, [follow this guide to be able to install extensions](https://github.com/NeverDecaf/chromium-web-store) from the Chrome Web Store. Most of these extensions should also Firefox.
+If you are using ungoogled-chromium, [follow this guide to be able to install extensions](https://github.com/NeverDecaf/chromium-web-store) from the Chrome Web Store. Most of these extensions should also support Firefox.
 
 **Must-haves:**
 
@@ -60,6 +60,6 @@ If you are using ungoogled-chromium, [follow this guide to be able to install ex
 
 **Nice to have:**
 
-- [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect)
+- [Privacy Redirect](https://github.com/SimonBrazell/privacy-redirect) / [LibRedirect](https://github.com/libredirect/browser_extension)
 - [LanguageTool](https://github.com/languagetool-org/languagetool)
 - [EFF Privacy Badger](https://github.com/EFForg/privacybadger)
