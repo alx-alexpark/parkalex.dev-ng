@@ -44,7 +44,7 @@ Let's list the common Chromium based browsers and eliminate them one by one:
 
 My personal favorite Chromium based browser is [ungoogled-chromium](https://github.com/ungoogled-software/ungoogled-chromium). It retains the security advantage of Chromium based browsers and strips the Google (or other companies’) spyware.
 
-******\*\*******\*\*******\*\*******Other nice Chromium based browsers:******\*\*******\*\*******\*\*******
+**Other nice Chromium based browsers:**
 
 - [Arc](https://arc.net/) — Despite being proprietary, I think it's still a great browser, and the people running it have made it clear they respect your privacy.
 - [Brave](https://brave.com/) — Similar to ungoogled-chromium, with additional privacy improvements. If you choose Brave, I would disable the sketchy crypto things. **Disclaimer: I do not support the actions of Brave’s CEO**
