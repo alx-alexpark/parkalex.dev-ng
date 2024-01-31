@@ -1,8 +1,15 @@
 ---
 import Hr from "./Hr.astro";
 import Socials from "./Socials.astro";
+import childProcess from "child_process";
 
 const currentYear = new Date().getFullYear();
+ 
+// obtain Git commit hash
+const hash = childProcess
+  .execSync("git rev-parse --short HEAD")
+  .toString()
+  .trim();
 
 export interface Props {
   noMarginTop?: boolean;
@@ -19,6 +26,8 @@ const { noMarginTop = false } = Astro.props;
       <span>Copyright &#169; {currentYear}</span>
       <span class="separator">&nbsp;|&nbsp;</span>
       <span>All rights reserved.</span>
+      <span class="separator">&nbsp;|&nbsp;</span>
+      <span>Version: {hash}</span>
     </div>
   </div>
 </footer>
