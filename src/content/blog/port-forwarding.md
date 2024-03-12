@@ -25,7 +25,7 @@ Personally, I think the risk of DDoS is negligible, it’s generally not a big d
 
 ## The easiest fix: don’t do it
 
-Think about it, do you really need to expose your server to the entire internet? For example: for a small Minecraft server, you only need to allow a few friends to access it. In that case, a vpn such as [Tailscale](https://tailscale.com/) will suffice just fine. [Tailscale](https://tailscale.com/) isn’t a vpn like the ones that sponsor every single YouTube video, it's more like remote access, but for exchanging IP traffic.
+Think about it, do you really need to expose your server to the entire internet? For example: for a small Minecraft server, you only need to allow a few friends to access it. In that case, a vpn such as [Tailscale](https://tailscale.com/) will suffice just fine. [Tailscale](https://tailscale.com/) isn’t a vpn like the ones that sponsor every single YouTube video, it's more like remote access, but for exchanging IP traffic. In short, it allows trusted people to securely access local network devices remotely, and is a much better solution for simpler needs.
 
 ## But if you really have to, setup a DMZ
 
@@ -33,7 +33,7 @@ No, not the border between North and South Korea, a [DMZ](https://en.wikipedia.o
 
 Personally, I just set up a second subnet on my OpenWrt router, and set firewall rules to prevent traffic from heading anywhere other than the internet. It is also nice to set rules so that devices on your LAN can initiate connections to the DMZ, but not vice versa. VLANs may also work, depending on your setup.
 
-Overall, draw a fine line between trusted and untrusted networks, and don’t let any traffic cross that line. Also, make sure you know the difference between a DMZ network and a DMZ host, they are different things, and the latter can actually be more unsafe than just port forwarding.
+Overall, draw a clear line between trusted and untrusted networks, and don’t let any traffic cross that line. Also, make sure you know the difference between a DMZ network and a DMZ host, they are different things, and the latter can actually be more unsafe than just port forwarding.
 
 ### Keep in mind, your exposed host machines should also be secure
 
