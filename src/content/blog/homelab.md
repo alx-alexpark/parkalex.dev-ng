@@ -11,7 +11,7 @@ tags:
 description: I recently bought a used server off of eBay for a homelab. Here I will be documenting the setup process from start to finish.
 ---
 
-![A picture of the rack server in my room](@assets/homelab/server-front.jpg)
+![A picture of the rack server in my room](@assets/blog/homelab/server-front.jpg)
 
 **Update 2023-12-05: A lot of the information on this page is now outdated, a new blog post about how my homelab has evolved will be out soon!**
 
@@ -59,15 +59,15 @@ I play games occasionally, and I like hosting my own servers for me and my frien
 
 For those of you that are interested, here are the specs of the server, starting with a neofetch!
 
-![Neofetch of the server](@assets/homelab/neofetch.jpeg)
+![Neofetch of the server](@assets/blog/homelab/neofetch.jpeg)
 
 The server came with 2 x 500GB hard drives, plugged into an H710P Mini, and I also added a 1TB NVMe SSD I had, using a PCIe adaptor card.
 
-![PCIe card with M.2 SSD](@assets/homelab/nvme-card.png)
+![PCIe card with M.2 SSD](@assets/blog/homelab/nvme-card.png)
 
 Finally, here is a picture of the server with its case open
 
-![Rack server with case open](@assets/homelab/server-internals.png)
+![Rack server with case open](@assets/blog/homelab/server-internals.png)
 
 # Conclusion
 
