@@ -71,7 +71,7 @@ export default (post: CollectionEntry<"blog">) => {
               fontSize: 28,
             }}
           >
-            <span>
+            {/* <span>
               by{" "}
               <span
                 style={{
@@ -83,10 +83,10 @@ export default (post: CollectionEntry<"blog">) => {
               <span style={{ overflow: "hidden", fontWeight: "bold" }}>
                 {post.data.author}
               </span>
-            </span>
+            </span> */}
 
             <span style={{ overflow: "hidden", fontWeight: "bold" }}>
-              {SITE.title}
+              parkalex.dev
             </span>
           </div>
         </div>
