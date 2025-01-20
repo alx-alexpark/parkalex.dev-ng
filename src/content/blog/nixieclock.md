@@ -48,7 +48,7 @@ I ordered the PCB and stencil from JLCPCB (they charged me a lot of large board 
 
 ## Soldering SMD for the first time.
 
-In past times, I just paid JLC to assemble all my SMD parts because it was convenient, and I didn’t know how to solder SMD. But this time, I had too many specialized parts that it would cost too much, and I figured I’d want to learn at one point. After consulting advice from a friend, I figured that using a hot plate would be the easiest method by far. While I messed up the first time because I failed to heat the board enough, the second time everything reflowed perfectly.
+In past times, I just paid JLC to assemble all my SMD parts because it was convenient, and I didn’t know how to solder SMD. But this time, I had too many specialized parts that it would cost too much, and I figured I’d want to learn at one point. After consulting advice from a friend, I was told that using a hot plate would be the easiest method by far. While I messed up the first time because I failed to heat the board enough, the second time everything reflowed perfectly.
 
 ## Success!
 
@@ -67,3 +67,5 @@ There are a few changes I would make in the second revision of this. Firstly, th
 I really enjoyed making this project, and it’s a really cool and function addition to my desk. Somehow I finished this in a month start to finish, designing everything during the week of final exams, waiting for things to ship over winter break, and assembling everything after the first back at school. I would say this project took me about 20-25 hours in total, and cost about $150 excluding the cost of tools.
 
 Nixie tubes are a hobby in itself, and I’ve barely scratched the surface with this project. Perhaps I might make more clocks in the future, who knows. Anyhow, I learned so much building this, and it was certainly a lot of fun. I know I’ve kinda neglected this blog recently, but hopefully I’ll post more things soon :)
+
+And as always, all the design files and code for this project are open source at [https://github.com/alx-alexpark/nixie-clock](https://github.com/alx-alexpark/nixie-clock)
