@@ -3,6 +3,14 @@ layout: ../layouts/ProjectsLayout.astro
 title: "Projects"
 ---
 
+**[IN-12 Nixie Tube Clock](/posts/nixieclock)**: A Nixie Tube Clock based on the IN-12 tubes, with time syncing over WiFi and a built in boost converter.
+
+**[AmogusRP2040](https://github.com/alx-alexpark/amogusrp2040)**: An RP2040 devboard in the shape of an Among Us crewmate. Used to play some sussy melodies on a piezo buzzer.
+
+**[Counterspell Austin](https://counterspell.hackclub.com/austin)**: A small community game jam ran as a satelite event under Hack Club.
+
+**[The Boreal Express](https://www.youtube.com/watch?v=hiG3fYq3xUU)**: I helped do the networking and server infrastructure for The Boreal Express, a hackathon on a train across Canada.
+
 **[Project Segfault](https://projectsegfau.lt)**: An organization hosting freely useable, privacy respecting, open source services for all to use, with the goal of increasing overall privacy on the internet.
 
 **[Shareplane](https://devpost.com/software/planer)**: A hackathon project that is a POC of Uber but with planes.
@@ -11,7 +19,7 @@ title: "Projects"
 
 **[Hack Austin](https://hackaustin.net/)**: An in-person hackathon in the Austin area planned for June 2024.
 
-**Homelab**: A personal home server that provides various services for me and others, alongside a networking setup specifically designed for it.
+**[Homelab](/posts/homelab)**: A personal home server that provides various services for me and others, alongside a networking setup specifically designed for it.
 
 **[Hackathon Projects](https://devpost.com/parkalex)**: I have attended several hackathons, making unique apps for each one.
 
