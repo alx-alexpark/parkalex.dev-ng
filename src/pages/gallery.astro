@@ -5,55 +5,17 @@ import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import { Image } from 'astro:assets';
 
-const photoFilenames = [
-  'businesscard.jpg',
-  'cursedmouse.jpg',
-  'backrooms.jpg',
-  'ksfo.jpg',
-  'moguspcb.jpg',
-  'STM.jpg',
-  'SF.jpg',
-  'banana.jpg',
-  'KORD.jpg',
-  'HPE.jpg',
-  'boba.jpg',
-  'ttc.jpg',
-  'firealarm.jpg',
-  'ICAO.jpg',
-  'toronto.jpg',
-  'fireworks.jpg',
-  'catears.jpg',
-  'crowdstrike.jpg',
-  'powerplug.jpg',
-  'ltt-door.jpg',
-  'viarail.jpg',
-  'rem.jpg',
-  'maineventwindows.jpg',
-  'tram.jpg',
-  'soundlaser.jpg',
-  'eink.jpg',
-  'skytrain.jpg',
-  'vancouverchinatown.jpg',
-  'mainstreet.jpg',
-  'antenna.jpg',
-  'roadsign727.jpg',
-  'filingcabinet.jpg',
-  'churchstreet.jpg',
-  'upexpress.jpg',
-  'nyc2.jpg',
-  'torontodowntown.jpg',
-  'nyc.jpg',
-  'vertmonts.jpg',
-  'bagmilk.jpg'
-];
+// Use import.meta.glob to import all images from the gallery directory
+const images = import.meta.glob('../assets/gallery/*.jpg', { eager: true });
 
-const photos = photoFilenames.map(filename => {
-    const name = filename.split('.')[0];
-    return {
-      src: (import(`../assets/gallery/${filename}` /* @vite-ignore */)),
-      alt: name
-    };
-  });
+const photos = Object.keys(images).map((path) => {
+  const filename = path.split('/').pop();
+  const name = filename.split('.')[0];
+  return {
+    src: images[path].default,
+    alt: name
+  };
+});
 
 photos.sort(() => Math.random() - 0.5);
 ---
@@ -63,7 +25,7 @@ photos.sort(() => Math.random() - 0.5);
   <main id="main-content">
     <section id="hero">
         <h1 class="mr-2">Gallery</h1>
-        <p>A gallery of various photos I have taken. All files are licensed under CC BY-NC. The order of the photos is random every time.</p>
+        <p>A gallery of various photos I have taken. All files are licensed under CC BY-NC. The order of the photos gets randomized every time this website is redeployed.</p>
     </section>
     <section id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
       {photos.map(photo => (
