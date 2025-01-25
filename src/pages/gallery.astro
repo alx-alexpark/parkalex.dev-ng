@@ -1,0 +1,98 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import { Image } from 'astro:assets';
+
+const photoFilenames = [
+  'businesscard.jpg',
+  'cursedmouse.jpg',
+  'backrooms.jpg',
+  'ksfo.jpg',
+  'moguspcb.jpg',
+  'STM.jpg',
+  'SF.jpg',
+  'banana.jpg',
+  'KORD.jpg',
+  'HPE.jpg',
+  'boba.jpg',
+  'ttc.jpg',
+  'firealarm.jpg',
+  'ICAO.jpg',
+  'toronto.jpg',
+  'fireworks.jpg',
+  'catears.jpg',
+  'crowdstrike.jpg',
+  'powerplug.jpg',
+  'ltt-door.jpg',
+  'viarail.jpg',
+  'rem.jpg',
+  'maineventwindows.jpg',
+  'tram.jpg',
+  'soundlaser.jpg',
+  'eink.jpg',
+  'skytrain.jpg',
+  'vancouverchinatown.jpg',
+  'mainstreet.jpg',
+  'antenna.jpg',
+  'roadsign727.jpg',
+  'filingcabinet.jpg',
+  'churchstreet.jpg',
+  'upexpress.jpg',
+  'nyc2.jpg',
+  'torontodowntown.jpg',
+  'nyc.jpg',
+  'vertmonts.jpg',
+  'bagmilk.jpg'
+];
+
+const photos = photoFilenames.map(filename => {
+    const name = filename.split('.')[0];
+    return {
+      src: (import(`../assets/gallery/${filename}` /* @vite-ignore */)),
+      alt: name
+    };
+  });
+
+photos.sort(() => Math.random() - 0.5);
+---
+
+<Layout>
+  <Header />
+  <main id="main-content">
+    <section id="hero">
+        <h1 class="mr-2">Gallery</h1>
+        <p>A gallery of various photos I have taken. All files are licensed under CC BY-NC. The order of the photos is random every time.</p>
+    </section>
+    <section id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
+      {photos.map(photo => (
+        <Image src={photo.src} alt={photo.alt} />
+      ))}
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  #gallery img {
+    width: 100%;
+    height: auto;
+  }
+  /* ===== Hero Section ===== */
+  #hero {
+    @apply pb-6 pt-8;
+  }
+  #hero h1 {
+    @apply my-4 inline-block text-2xl font-bold sm:my-8 sm:text-3xl;
+  }
+  #hero .rss-link {
+    @apply mb-6;
+  }
+  #hero .rss-icon {
+    @apply mb-2 h-6 w-6 scale-110 fill-skin-accent sm:mb-3 sm:scale-125;
+  }
+  #hero p {
+    @apply my-2;
+  }
+</style>
