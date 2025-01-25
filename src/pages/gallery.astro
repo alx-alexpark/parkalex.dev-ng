@@ -27,9 +27,9 @@ photos.sort(() => Math.random() - 0.5);
         <h1 class="mr-2">Gallery</h1>
         <p>A gallery of various photos I have taken. All files are licensed under CC BY-NC. The order of the photos gets randomized every time this website is redeployed.</p>
     </section>
-    <section id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full">
+    <section id="gallery" class="columns-1 sm:columns-2 w-full mb-10">
       {photos.map(photo => (
-        <Image src={photo.src} alt={photo.alt} />
+        <Image src={photo.src} alt={photo.alt} style={{marginBottom: "10px"}} />
       ))}
     </section>
   </main>
