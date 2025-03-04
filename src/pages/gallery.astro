@@ -9,14 +9,15 @@ const images = import.meta.glob('../assets/gallery/*.jpg', { eager: true });
 
 const photos = Object.keys(images).map((path) => {
   const filename = path.split('/').pop();
-  const name = filename.split('.')[0];
+  const name = filename!.split('.')[0];
   return {
     src: images[path].default,
-    alt: name
+    alt: name,
+    date: images[path].metadata.date,
   };
 });
 
-photos.sort(() => Math.random() - 0.5);
+//sort photos based on file metadata date
 ---
 
 <Layout>
@@ -28,7 +29,7 @@ photos.sort(() => Math.random() - 0.5);
     </section>
     <section id="gallery" class="columns-1 sm:columns-2 w-full mb-10">
       {photos.map(photo => (
-        <Image src={photo.src} alt={photo.alt} style={{marginBottom: "10px"}} />
+        <Image src={photo.src} alt={photo.date} style={{marginBottom: "10px"}} />
       ))}
     </section>
   </main>
