@@ -64,7 +64,7 @@ I soldered the rest of the tubes onto the board, and put the rest of the ICs int
 
 There are a few changes I would make in the second revision of this. Firstly, the boost converter is struggling with the current 5V input because of voltage drops due to resistance. Next time, I would probably add a 12V input as it would make the boost converter much more efficient and better at providing the needed voltage and current. I also made the spacing between the digits slightly too wide, and I would probably put them closer together in the next revision.
 
-I really enjoyed making this project, and it’s a really cool and function addition to my desk. Somehow I finished this in a month start to finish, designing everything during the week of final exams, waiting for things to ship over winter break, and assembling everything after the first back at school. I would say this project took me about 20-25 hours in total, and cost about $150 excluding the cost of tools.
+I really enjoyed making this project, and it’s a really cool and functional addition to my desk. Somehow I finished this in a month start to finish, designing everything during the week of final exams, waiting for things to ship over winter break, and assembling everything after the first week back at school. I would say this project took me about 20-25 hours in total, and cost about $150 excluding the cost of tools.
 
 Nixie tubes are a hobby in itself, and I’ve barely scratched the surface with this project. Perhaps I might make more clocks in the future, who knows. Anyhow, I learned so much building this, and it was certainly a lot of fun. I know I’ve kinda neglected this blog recently, but hopefully I’ll post more things soon :)
 
