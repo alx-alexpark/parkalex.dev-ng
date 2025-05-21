@@ -1,0 +1,25 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:security@parkalex.dev
+Expires: 2030-01-01T06:00:00.000Z
+Encryption: https://parkalex.dev/contact
+Preferred-Languages: en
+Canonical: https://parkalex.dev/.well-known/security.txt
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEaevL8KfWKVmIG0osJKO4P7JqqQAFAmguWkcACgkQJKO4P7Jq
+qQBo3Q/+JmYlpAW0hBpPHJHHNf+T2DSavebbN7t+rJ1clnjdq76tjzBabo9FXBH2
+9jFM8HvAASqqX7YEzv4+2SOg6T/CxrJuF/L08MAcIDw1lBnN+IX3jS2SW8n6Js/u
+9Pvcrz2mRq18mk7XLNR1raN1sa7QZVSnaMC1/kxa7M2P/kvyY8UNmn9a44LcB/DC
+EGgb3Q92JUPOgnG9JB9N1uCe4tLYbn2eeAq8QapNoBWnKOsbS5H4UEyb/+T3QByZ
+AYcJZsT2VgOAw41QSPjkk9HwCHPCw+aCHdkW/Pyfk7ggN5NxNzD36XeJMjfyRZ8o
+3KRASg6hn/8xNT07UuKMumwll+gHPnq1UX9laTbTHCgz2Eg8/8X98VIjYAQ1KPdY
++bcIMQj3jRGNP2ojrpEZ0Or6JSO+9ygyIBfCZlpFK4v5YGAwSdPDqKqwzkCNnT3x
+dOW9hJv/ELAYczqWg5mS2lhuh+cnM3wg0UvEM9YxuWXoFEL/yjEyZpmWESG1O5b/
+qGE7O9POIJs/NrVWQ6rbpbUVpV4h15M6+oS9C5FoWXICVpJd2hYRApGGThVjdlzM
+I0QW26/uLHT597D4OlOWlejcdIFs6bClGPxNK9tplJIkpjElsbeY7Wc4EK/r0RX8
+Bd/Uzhm4edmcTrKjEfNBeo4birY7AzoJMIhjE5xVjUigqP5YOqk=
+=PVgG
+-----END PGP SIGNATURE-----
