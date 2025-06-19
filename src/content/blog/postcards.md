@@ -15,7 +15,7 @@ Recently, I remembered that postcards are a real thing. I've seen them around, o
 
 ## Making the design
 
-Making the design for the postcard is actually quite simple. I used a Figma extension called "Print for Figma" to make blank 6"x4" (152.4x101.6mm) cards. The front of your postcard can be anything you want, and the back follows the standard of having a stamp and an address (return addresses are optional).
+Making the design for the postcard was actually quite simple. I used a Figma extension called "Print for Figma" to make blank 6"x4" (152.4x101.6mm) cards. The front of your postcard can be anything you want, and the back follows the standard of having a stamp and an address (return addresses are optional).
 
 ![A screenshot of the Figma graphic design software showing the front and back of the postcard](@assets/blog/postcards/postcardfigma.png)
 
