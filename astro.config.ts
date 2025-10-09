@@ -42,4 +42,8 @@ export default defineConfig({
   // adapter: vercel({
   //   webAnalytics: { enabled: true },
   // }),
+  redirects: {
+    "/fun": "/funnies",
+    "/fun/friends": "/funnies/friends",
+  },
 });
