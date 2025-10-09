@@ -5,7 +5,7 @@ import Footer from "@components/Footer.astro";
 import { Image } from 'astro:assets';
 
 // Use import.meta.glob to import all images from the gallery directory
-const images = import.meta.glob('../assets/gallery/*.jpg', { eager: true });
+const images = import.meta.glob('../assets/gallery/*.webp', { eager: true });
 
 const photos = Object.keys(images).map((path) => {
   const filename = path.split('/').pop();
