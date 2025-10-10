@@ -7,4 +7,4 @@ Here I put a bunch of random stuff. I don't too many things yet, but if you have
 
 [My Gallery](/gallery)
 
-[My Friends' Websites](/fun/friends)
+[My Friends' Websites](/funnies/friends)
