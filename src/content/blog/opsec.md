@@ -80,7 +80,7 @@ If you're on Android, get F Droid (open-source-only app store), and try to get m
 
 Obviously, this guide is not all-inclusive. It highlights my personal recommendations, but if you want to go further in protecting your privacy and security, these are websites I would check out.
 
-[www.privacyguides.org](https://www.privacyguides.org/)
+[www.privacyguides.org](https://www.privacyguides.org/) \
 [ssd.eff.org](https://ssd.eff.org) (Intended mostly for a non-technical audience)
 
 Thanks for reading my blog post! Share it with your friends if you found it helpful.
