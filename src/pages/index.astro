@@ -47,6 +47,9 @@ const images = Object.entries(import.meta.glob('../assets/images/88x31/*.{png,jp
       <p>
         Hi there!! I'm Alex, a high school senior from Houston, Texas! I like designing PCBs, organizing Hackathons, and building my own infrastructure. I care deeply about privacy and security, so I'm a big fan of open source software and selfhosting. Feel free to explore my website and blog!
       </p>
+      <p style="padding-top: 10px;">
+        The current time for me is: <span id="current-time">--:--:--</span>
+      </p>
       {
         // only display if at least one social link is enabled
         socialCount > 0 && (
@@ -129,6 +132,29 @@ const images = Object.entries(import.meta.glob('../assets/images/88x31/*.{png,jp
   <Footer />
 </Layout>
 
+<script>
+  function updateClock() {
+    const now = new Date();
+    const options: Intl.DateTimeFormatOptions = {
+      timeZone: 'America/Chicago',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: false
+    };
+    const timeString = now.toLocaleTimeString('en-US', options);
+    const timeElement = document.getElementById('current-time');
+    if (timeElement) {
+      timeElement.textContent = timeString;
+    }
+  }
+
+  // Update immediately
+  updateClock();
+  // Update every second
+  setInterval(updateClock, 250);
+</script>
+
 <style>
   /* ===== Hero Section ===== */
   #hero {
@@ -145,6 +171,12 @@ const images = Object.entries(import.meta.glob('../assets/images/88x31/*.{png,jp
   }
   #hero p {
     @apply my-2;
+  }
+  .time-display {
+    @apply my-3 text-sm opacity-80;
+  }
+  #current-time {
+    @apply font-mono font-semibold;
   }
   .social-wrapper {
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;
