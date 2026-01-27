@@ -18,13 +18,11 @@ While I thought initially that there was nothing I could do, through some electr
 
 **WARNING:** Follow these instructions at your own risk. It is possible to damage your laptop during this process. Only do this on devices which you own.
 
-## Finding the flash chip
+<div style="border: 2px solid currentColor; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; background: rgba(128, 128, 128, 0.1);">
 
-The first thing you'll have to do is open up your laptop and locate the BIOS Flash chip. Most likely, it be in a SOIC-8 or WSON-8 package, but your hardware may be different.
-![](@assets/blog/bios-pw-hack/arrow.png)
-Commonly, the flash chip will have a marking that starts with "25". Mine had "25Q128FWSF" written on it. Once you find an IC that you think is the BIOS flash, search online for its datasheet.
-![](@assets/blog/bios-pw-hack/ds.png)
-If you find something like this, it's probably the right chip. However, these chips are different based on what laptop you're using, so your flash IC most likely will be different. Look up the datasheets of all possible flash IC candidates until you determine which one is the most likely to be the real one.
+**EDIT 2026-01-27**: You might not need to open up your laptop at all. On some devices you can dump the BIOS rom using `flashrom -p internal -r bios_dump.bin`, and from here you can skip to the "Decrypting the password" section.
+
+</div>
 
 ## Dumping the data off the flash chip
 
