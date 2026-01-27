@@ -20,7 +20,7 @@ While I thought initially that there was nothing I could do, through some electr
 
 <div style="border: 2px solid currentColor; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0; background: rgba(128, 128, 128, 0.1);">
 
-**EDIT 2026-01-27**: You might not need to open up your laptop at all. On some devices you can dump the BIOS rom using `flashrom -p internal -r bios_dump.bin`, and from here you can skip to the "Decrypting the password" section.
+**EDIT 2026-01-27**: You might not need to open up your laptop at all. On some devices you can dump the BIOS ROM by running `flashrom -p internal -r bios_dump.bin` on your laptop itself, and from here you can skip to the "Decrypting the password" section.
 
 </div>
 
