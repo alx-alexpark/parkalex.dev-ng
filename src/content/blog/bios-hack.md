@@ -24,6 +24,14 @@ While I thought initially that there was nothing I could do, through some electr
 
 </div>
 
+## Finding the flash chip
+
+The first thing you'll have to do is open up your laptop and locate the BIOS Flash chip. Most likely, it be in a SOIC-8 or WSON-8 package, but your hardware may be different.
+![](@assets/blog/bios-pw-hack/arrow.png)
+Commonly, the flash chip will have a marking that starts with "25". Mine had "25Q128FWSF" written on it. Once you find an IC that you think is the BIOS flash, search online for its datasheet.
+![](@assets/blog/bios-pw-hack/ds.png)
+If you find something like this, it's probably the right chip. However, these chips are different based on what laptop you're using, so your flash IC most likely will be different. Look up the datasheets of all possible flash IC candidates until you determine which one is the most likely to be the real one.
+
 ## Dumping the data off the flash chip
 
 In order to extract the password, you need to dump all the data off the chip.
